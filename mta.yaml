@@ -1,3 +1,12 @@
 ID: project2
 _schema-version: '2.1'
 version: 0.0.1
+
+modules:
+ - name: nodemodule
+   type: nodejs
+   path: nodemodule
+   provides:
+    - name: nodemodule_api
+      properties:
+         url: ${default-url}
